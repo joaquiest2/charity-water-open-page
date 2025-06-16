@@ -41,4 +41,4 @@ To set up and run the website, follow these steps:
 
 ## Acknowledgments
 
-This project is inspired by the mission of charity:water to provide clean and safe drinking water to people in developing countries.
+This project is inspired by the mission of charity:water to provide clean and safe drinking water to people in developing countries.# charity-water-website
