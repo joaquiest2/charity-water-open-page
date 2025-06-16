@@ -1,56 +1,24 @@
-# charity:water Landing Page
+# Week 2 Project: Build the charity: water Landing Page
+To get started, create a new Codespace from this repo.
 
-This project is a mobile-first, responsive landing page inspired by the mission of [charity: water](https://www.charitywater.org/) to bring clean drinking water to communities in need.
+In this Project, you’ll transform your Canva mockup into a fully functional landing page using HTML and CSS. This is your chance to take your creative concept — with your brand visuals, your messaging, and your imagery — and make it real. You'll build a site that not only looks great, but also educates, inspires, and drives action.
 
-## 💻 Live Demo
+With help from AI to jumpstart your layout, you'll focus on structuring your content, applying your brand style, and creating a polished final product that reflects your vision. By the end of this Project, you’ll have a live, interactive page deployed to the web. You can share this work when you want to showcase your technical skills and your passion for digital storytelling. 
 
-[View the live site](https://joaquiest2.github.io/charity-water-open-page/)
+## charity: water Brand Colors & Fonts
 
-## 📁 Project Structure
+### Primary Colors:
+- Yellow:     `#FFC907`
+- Blue:       `#2E9DF7`
 
-
-## 🚀 Features
-
-- **Mobile-First Design**: Responsive across all devices
-- **Interactive Modal**: Donation form with a thank-you message
-- **Custom Fonts**: Uses Lato, Montserrat, and Poppins via Google Fonts
-- **Smooth Navigation**: Toggle-friendly navbar for smaller screens
-
-## 🎨 Brand Colors & Fonts
-
-### Primary Colors
-- Yellow: `#FFC907`
-- Blue: `#2E9DF7`
-
-### Secondary Colors
+### Secondary Colors:
 - Light Blue: `#8BD1CB`
-- Green: `#4FCB53`
-- Orange: `#FF902A`
-- Red: `#F5402C`
+- Green:      `#4FCB53`
+- Orange:     `#FF902A`
+- Red:        `#F5402C`
 - Dark Green: `#159A48`
-- Pink: `#F16061`
+- Pink:       `#F16061`
 
-### Fonts
-- Lato Bold
-- Poppins Bold
-- Montserrat
-
-## 🛠 Getting Started
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/joaquiest2/charity-water-open-page.git
-   cd charity-water-open-page
-
-
----
-
-### ✅ Now Do This:
-
-1. Replace everything in your current `README.md` with the clean version above.
-2. Then in your terminal:
-
-```bash
-git add README.md
-git commit -m "Resolved README.md merge conflict with final version"
-git push -u origin main
+### Fonts:
+- Proxima Nova
+- Avenir
