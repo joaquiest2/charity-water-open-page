@@ -1,44 +1,56 @@
-# charity:water Website
+# charity:water Landing Page
 
-This project is a simple mobile-first website for charity:water, showcasing a responsive navigation bar that adapts to different screen sizes.
+This project is a mobile-first, responsive landing page inspired by the mission of [charity: water](https://www.charitywater.org/) to bring clean drinking water to communities in need.
 
-## Project Structure
+## 💻 Live Demo
 
-```
-charity-water-website
-├── index.html        # Main HTML document for the website
-├── css
-│   └── styles.css    # CSS styles for the website
-└── README.md         # Documentation for the project
-```
+[View the live site](https://joaquiest2.github.io/charity-water-open-page/)
 
-## Getting Started
+## 📁 Project Structure
 
-To set up and run the website, follow these steps:
 
-1. **Clone the repository** (if applicable):
-   ```
-   git clone <repository-url>
-   ```
+## 🚀 Features
 
-2. **Navigate to the project directory**:
-   ```
-   cd charity-water-website
-   ```
+- **Mobile-First Design**: Responsive across all devices
+- **Interactive Modal**: Donation form with a thank-you message
+- **Custom Fonts**: Uses Lato, Montserrat, and Poppins via Google Fonts
+- **Smooth Navigation**: Toggle-friendly navbar for smaller screens
 
-3. **Open the `index.html` file** in your web browser to view the website.
+## 🎨 Brand Colors & Fonts
 
-## Features
+### Primary Colors
+- Yellow: `#FFC907`
+- Blue: `#2E9DF7`
 
-- **Mobile-First Design**: The website is designed to be mobile-friendly, with a vertical navigation bar on small devices that transitions to a horizontal layout on larger screens.
-- **Responsive Navigation Bar**: The navigation bar collapses on smaller screens for better usability.
-- **Custom Fonts**: The website uses Lato Bold, Poppins Bold, and Montserrat fonts for a modern look.
+### Secondary Colors
+- Light Blue: `#8BD1CB`
+- Green: `#4FCB53`
+- Orange: `#FF902A`
+- Red: `#F5402C`
+- Dark Green: `#159A48`
+- Pink: `#F16061`
 
-## Technologies Used
+### Fonts
+- Lato Bold
+- Poppins Bold
+- Montserrat
 
-- HTML
-- CSS
+## 🛠 Getting Started
 
-## Acknowledgments
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/joaquiest2/charity-water-open-page.git
+   cd charity-water-open-page
 
-This project is inspired by the mission of charity:water to provide clean and safe drinking water to people in developing countries.# charity-water-website
+
+---
+
+### ✅ Now Do This:
+
+1. Replace everything in your current `README.md` with the clean version above.
+2. Then in your terminal:
+
+```bash
+git add README.md
+git commit -m "Resolved README.md merge conflict with final version"
+git push -u origin main
