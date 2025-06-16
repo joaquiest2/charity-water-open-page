@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity Water Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <!-- Hero Section -->
+  <section
+  section>
+    <h1>Clean Water for Everyone</h1>
+    <p>Join us in bringing safe, clean water to communities in need.</p>
+ 
+</section>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+  <!-- Story Section -->
+  <section class="story">
+    <h2>Our Story</h2>
+    <p>
+      We believe that access to clean water is a basic human right. Our mission is to bring safe drinking water to every person on the planet. Since our founding in 2006, we have funded over 91,000 water projects in 29 countries, providing clean water to more than 13 million people.
+    </p>
+  </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <!-- Impact Section -->
+  <section class="impact-story">
+    <h2>Real Impact: Meet Amina</h2>
+    <div class="impact-content">
+      <img src="images/Madagascar_2019_CG-2679.jpg" alt="Amina smiling with clean water" class="impact-image" />
+      <img src="images/360_F_989887987_bXxzqQIAwqwNRZBdT369BsXDKYR694jt.jpg" alt="Child drinking from faucet" class="impact-image" />
+      <p>
+        “Thanks to charity: water, Amina’s village now has access to clean, safe drinking water. What used to be a daily struggle is now a source of hope—giving her time for school, better health, and a brighter future.”
+      </p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="call-to-action">
+    <h2>Make a Difference</h2>
+    <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
+    <a href="#" class="cta-button donate-button">Donate Now</a>
+  </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Contact us: <a href="mailto:support@charitywater.org">support@charitywater.org</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const modal = document.getElementById("donate-modal");
+    const openModalBtn = document.querySelector(".donate-button");
+    const closeModalBtn = document.getElementById("close-modal");
+    const donationForm = document.getElementById("donation-form");
+    const thankYouMessage = document.getElementById("thank-you-message");
+
+    // Open modal
+    openModalBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      modal.style.display = "block";
+    });
+
+    // Close modal
+    closeModalBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+      donationForm.style.display = "block";
+      thankYouMessage.style.display = "none";
+    });
+
+    // Close modal on outside click
+    window.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        donationForm.style.display = "block";
+        thankYouMessage.style.display = "none";
+      }
+    });
+
+    // Handle form submission
+    donationForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      donationForm.style.display = "none";
+      thankYouMessage.style.display = "block";
+    });
+  </script>
+
 </body>
 </html>
