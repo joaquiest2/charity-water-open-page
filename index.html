@@ -5,87 +5,330 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charity Water Landing Page</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: url('images/cw_Selects_16x9_19.jpg') no-repeat center center fixed;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #2E9DF7;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #2E9DF7;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      background-color: #ffc907;
+      margin: 1rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(5px);
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #2E9DF7;
+    }
+
+    p {
+      max-width: 700px;
+      margin: 1rem auto;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .cta-button {
+      background-color: #2E9DF7;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #159A48;
+    }
+
+    .impact-images {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .impact-images img {
+      width: 300px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+  <div class="logo">
+    <a href="#">
+      <img src="images/cw_logo-2.png" alt="charity: water logo">
+    </a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="background-overlay"></div>
 
-  <!-- Hero Section -->
-  <section
-  section>
+
+  <section class="section" id="hero">
     <h1>Clean Water for Everyone</h1>
     <p>Join us in bringing safe, clean water to communities in need.</p>
- 
-</section>
+  </section>
 
-  <!-- Story Section -->
-  <section class="story">
+  <section class="section" id="story">
     <h2>Our Story</h2>
     <p>
       We believe that access to clean water is a basic human right. Our mission is to bring safe drinking water to every person on the planet. Since our founding in 2006, we have funded over 91,000 water projects in 29 countries, providing clean water to more than 13 million people.
     </p>
   </section>
 
-  <!-- Impact Section -->
-  <section class="impact-story">
+  <section class="section" id="impact">
     <h2>Real Impact: Meet Amina</h2>
-    <div class="impact-content">
-      <img src="images/Madagascar_2019_CG-2679.jpg" alt="Amina smiling with clean water" class="impact-image" />
-      <img src="images/360_F_989887987_bXxzqQIAwqwNRZBdT369BsXDKYR694jt.jpg" alt="Child drinking from faucet" class="impact-image" />
-      <p>
-        “Thanks to charity: water, Amina’s village now has access to clean, safe drinking water. What used to be a daily struggle is now a source of hope—giving her time for school, better health, and a brighter future.”
-      </p>
+    <p>
+      Thanks to charity: water, Amina’s village now has access to clean, safe drinking water. What used to be a daily struggle is now a source of hope—giving her time for school, better health, and a brighter future.
+    </p>
+    <div class="impact-images">
+      <img src="images/Madagascar_2019_CG-2679.jpg" alt="Amina smiling with clean water">
+      <img src="images/360_F_989887987_bXxzqQIAwqwNRZBdT369BsXDKYR694jt.jpg" alt="Child drinking from faucet">
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="call-to-action">
+
+  <section class="section" id="donate">
     <h2>Make a Difference</h2>
     <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
     <a href="#" class="cta-button donate-button">Donate Now</a>
   </section>
-  </div>
+<!-- Removed duplicate modal script to prevent variable redeclaration errors -->
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>Contact us: <a href="mailto:support@charitywater.org">support@charitywater.org</a></p>
+  <footer>
+    <p>&copy; 2023 charity: water. All rights reserved.</p>
+    <p>Follow us on 
+      <a href="https://www.facebook.com/charitywater" target="_blank">Facebook</a>, 
+      <a href="https://twitter.com/charitywater" target="_blank">Twitter</a>, 
+      <a href="https://www.instagram.com/charitywater/" target="_blank">Instagram</a>
+    </p>
   </footer>
 
-  <!-- JavaScript -->
+  <style>
+    footer {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      z-index: 1000;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+      color: #333;
+    }
+
+    footer a {
+      color: #2E9DF7;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1001;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal input[type="text"],
+    .modal input[type="email"],
+    .modal input[type="number"] {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .modal button {
+      background-color: #2E9DF7;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .modal button:hover {
+      background-color: #159A48;
+    }
+  </style>
+  <div id="donate-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Donate Now</h2>
+      <form id="donation-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="amount">Donation Amount:</label>
+        <input type="number" id="amount" name="amount" required min="1">
+        <button type="submit">Submit</button>
+      </form>
+      <div id="thank-you-message" style="display:none;">
+        <h3>Thank you for your donation!</h3>
+        <p>Your support means the world to us.</p>
+      </div>
   <script>
-    const modal = document.getElementById("donate-modal");
-    const openModalBtn = document.querySelector(".donate-button");
-    const closeModalBtn = document.getElementById("close-modal");
-    const donationForm = document.getElementById("donation-form");
-    const thankYouMessage = document.getElementById("thank-you-message");
-
-    // Open modal
-    openModalBtn.addEventListener("click", function (e) {
-      e.preventDefault();
-      modal.style.display = "block";
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+        const modalHTML =
+        `<div class="modal-overlay"></div>`;
+        document.body.insertAdjacentHTML('beforeend', modalHTML);
+      });
     });
-
-    // Close modal
-    closeModalBtn.addEventListener("click", function () {
+    </script>
+    </div>
+  </div>
+  <script>
+  // Modal functionality
+  const modal = document.getElementById("donate-modal");
+  const openBtn = document.querySelector(".donate-button");
+  const closeBtn = document.getElementById("close-modal");
+  const form = document.getElementById("donation-form");
+  const thankYou = document.getElementById("thank-you-message");
+  openBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    modal.style.display = "block";
+  });
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    form.style.display = "block"; 
+    thankYou.style.display = "none";
+  });
+  window.addEventListener("click", function (e) {
+    if (e.target === modal) {
       modal.style.display = "none";
-      donationForm.style.display = "block";
-      thankYouMessage.style.display = "none";
+      form.style.display = "block";
+      thankYou.style.display = "none";
+    }
+  });
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    form.style.display = "none";
+    thankYou.style.display = "block";
+  });
+  // Close modal when clicking outside of it
+  modal.style.display = "none"; // Hide modal by default
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      form.style.display = "block"; 
+      thankYou.style.display = "none";
+    }
+  });
+  // Close modal when clicking the close button
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+    form.style.display = "block"; 
+    thankYou.style.display = "none"; 
     });
-
-    // Close modal on outside click
-    window.addEventListener("click", function (e) {
-      if (e.target === modal) {
-        modal.style.display = "none";
-        donationForm.style.display = "block";
-        thankYouMessage.style.display = "none";
-      }
-    });
-
-    // Handle form submission
-    donationForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      donationForm.style.display = "none";
-      thankYouMessage.style.display = "block";
-    });
-  </script>
-
+</script>
 </body>
 </html>
